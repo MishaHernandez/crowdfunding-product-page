@@ -1,0 +1,17 @@
+{
+  "name": "crowdfunding-product-page-main",
+  "version": "1.0.0",
+  "description": "challenge by frontend mentor",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/css/styles.css --output dist/css/styles.css"
+  },
+  "author": "Mijail Hernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  }
+}
