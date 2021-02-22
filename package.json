@@ -4,7 +4,8 @@
   "description": "challenge by frontend mentor",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/css/styles.css --output dist/css/styles.css"
+    "build": "postcss src/css/styles.css --output dist/css/styles.css",
+    "watch": "postcss src/css/styles.css --output dist/css/styles.css --watch"
   },
   "author": "Mijail Hernandez",
   "license": "ISC",
