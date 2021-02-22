@@ -15,8 +15,15 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
-  <header class="flex items-center justify-between bg-red-200">
+  <picture class="absolute -z-10">
+    <source srcset="images/image-hero-desktop.jpg" media="(min-width: 751px)">
+    <source srcset="images/image-hero-mobile.jpg" media="(max-width: 750px)">
+    <img src="images/image-hero-mobile.jpg" alt="desktop image">
+  </picture>
+
+  <header class="flex items-center justify-between px-6 py-7">
     <img src="images/logo.svg" alt="crowdfund logo">
     <nav>
       <img src="images/icon-hamburger.svg" alt="hamburger icon">
