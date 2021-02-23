@@ -13,6 +13,9 @@ module.exports = {
       },
       zIndex: {
         '-10': '-10',
+      },
+      width: {
+        'card-mb': '86%',
       }
     },
   },
