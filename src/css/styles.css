@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card {
-    @apply px-5 mx-auto text-center bg-white rounded-md w-card-mb;
+    @apply px-5 mx-auto text-center bg-white border border-gray-100 rounded-md w-card-mb;
 }
 .button {
     @apply inline-block py-4 font-bold text-white rounded-full px-11 bg-button;
