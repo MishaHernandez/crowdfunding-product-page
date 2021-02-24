@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .card {
-    @apply px-5 mx-auto bg-white border border-gray-100 rounded-md;
+    @apply px-6 mx-auto bg-white border rounded-md;
 }
 .button {
-    @apply inline-block py-4 font-bold text-white rounded-full px-11 bg-button;
+    @apply inline-block font-bold text-gray-100 rounded-full bg-cyan-100;
 }
