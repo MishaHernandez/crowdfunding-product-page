@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 .card {
-    @apply px-6 mx-auto bg-white border rounded-md;
+    @apply px-6 py-5 mx-auto bg-white border rounded-md;
 }
 .button {
     @apply inline-block font-bold text-gray-100 rounded-full bg-cyan-100;
 }
 .button-disable {
     @apply inline-block font-bold text-gray-100 rounded-full bg-darkgray;
+}
+.paragraph {
+    @apply text-sm leading-relaxed text-darkgray;
 }
