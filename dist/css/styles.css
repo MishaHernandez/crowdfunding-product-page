@@ -31737,6 +31737,15 @@ video {
   padding-right: 1.5rem;
 }
 
+.card-modal {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.375rem;
+  border-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button {
   --tw-bg-opacity: 1;
   background-color: rgba(59.925, 179.77499999999998, 171.785, var(--tw-bg-opacity));

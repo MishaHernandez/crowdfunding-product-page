@@ -114,12 +114,13 @@
 
   <!-- Selection modal start -->
 
-  <section class="card w-card-mb">
-    <h3 class="mt-4 mb-5 text-xl font-bold">Back this project</h3>
-    <p class="paragraph">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+  <section class="relative hidden card w-card-mb">
+    <img class="absolute top-9 right-6" src="images/icon-close-modal.svg" alt="close icon">
+    <h3 class="mt-2 mb-5 text-lg font-bold">Back this project</h3>
+    <p class="mb-6 paragraph">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
   
     <article class="mb-6 border-gray-300 card">
-      <h4 class="flex items-center mb-1 text-sm font-bold">
+      <h4 class="flex items-center mb-6 text-sm font-bold">
         <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span> Pledge with no reward</h4>
       <p class="mb-6 paragraph">
         Choose to support us without a reward if you simply believe in our project. As a backer, 
@@ -127,21 +128,27 @@
       </p>
     </article>
   
-    <article class="mb-6 border-gray-300 card">
-      <h4 class="flex items-center mb-1 text-sm font-bold">
-        <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>Bamboo Stand</h4>
-      <p class="mb-6 text-sm text-cyan-100">Pledge $25 or more</p>
-      <p class="mb-6 paragraph">
-        You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-        you’ll be added to a special Backer member list.
-      </p>
-      <div class="flex items-center mb-6"><span class="mr-2 text-3xl font-bold">101</span> <span class="text-darkgray">left</span></div>
+    <article class="mb-6 border-gray-300 card-modal">
+      <div class="px-6 py-5">
+       <div class="flex items-center mb-6">
+          <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>
+          <div>
+            <h4 class="flex items-center mb-1 text-sm font-bold">Bamboo Stand</h4>
+            <p class="text-sm font-medium text-cyan-100">Pledge $25 or more</p>
+          </div>
+       </div>
+        <p class="mb-6 paragraph">
+          You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+          you’ll be added to a special Backer member list.
+        </p>
+        <div class="flex items-center"><span class="mr-2 text-lg font-bold">101</span> <span class="text-darkgray">left</span></div>
+      </div>
       <!-- Selected pledge start -->
-      <div class="border-t-2">
-        <p class="text-center paragraph">Enter your pledge</p>
-        <div class="flex justify-evenly">
-          <button class="py-3 px-7 button-secondary">$25</button>
-          <button class="py-3 px-7 button">Continue</button>
+      <div class="px-6 py-5 border-t-2">
+        <p class="mb-4 text-center paragraph">Enter your pledge</p>
+        <div class="flex justify-between">
+          <button class="px-8 py-3 text-sm button-secondary">$25</button>
+          <button class="py-3 text-sm px-7 button">Continue</button>
         </div>
       </div>
     </article>
@@ -149,38 +156,54 @@
     <!-- Selected pledge end -->
   
     <article class="mb-6 border-gray-300 card">
-      <h4 class="flex items-center mb-1 text-sm font-bold">
-        <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>Black Edition Stand</h4>
-      <p class="mb-6 text-sm text-cyan-100">Pledge $75 or more</p>
+     <div class="flex items-center mb-6">
+        <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>
+        <div>
+          <h4 class="flex items-center mb-1 text-sm font-bold">Black Edition Stand</h4>
+          <p class="text-sm font-medium text-cyan-100">Pledge $75 or more</p>
+        </div>
+     </div>
       <p class="mb-6 paragraph">
         You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
         member list. Shipping is included.
       </p>
-      <div class="flex items-center mb-6"><span class="mr-2 text-3xl font-bold">64</span> <span class="text-darkgray">left</span></div>
+      <div class="flex items-center"><span class="mr-2 text-lg font-bold">64</span> <span class="text-darkgray">left</span></div>
+      <!-- Selected pledge start -->
+      <div class="hidden px-6 py-5 border-t-2">
+        <p class="mb-4 text-center paragraph">Enter your pledge</p>
+        <div class="flex justify-between">
+          <button class="px-8 py-3 text-sm button-secondary">$75</button>
+          <button class="py-3 text-sm px-7 button">Continue</button>
+        </div>
+      </div>
     </article>
   
-    <!-- Selected pledge start -->
-    Enter your pledge
-    $75
-    Continue
     <!-- Selected pledge end -->
   
-    <article class="mb-6 border-gray-300 card">
-      <h4 class="flex items-center mb-1 text-sm font-bold">
-        <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>Mahogany Special Edition</h4>
-      <p class="mb-6 text-sm text-cyan-100">Pledge $200 or more</p>
+    <article class="mb-6 border-gray-300 opacity-50 card">
+      <div class="flex items-center mb-6">
+        <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>
+        <div>
+          <h4 class="flex items-center mb-1 text-sm font-bold">Mahogany Special Edition</h4>
+          <p class="text-sm font-medium text-cyan-100">Pledge $200 or more</p>
+        </div>
+      </div>
       <p class="mb-6 paragraph">
         You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
         to our Backer member list. Shipping is included.
       </p>
-      <div class="flex items-center mb-6"><span class="mr-2 text-3xl font-bold">0</span> <span class="text-darkgray">left</span></div>
+      <div class="flex items-center"><span class="mr-2 text-lg font-bold">0</span> <span class="text-darkgray">left</span></div>
+      <!-- Selected pledge start -->
+      <div class="hidden px-6 py-5 border-t-2">
+        <p class="mb-4 text-center paragraph">Enter your pledge</p>
+        <div class="flex justify-between">
+          <button class="px-8 py-3 text-sm button-secondary">$200</button>
+          <button class="py-3 text-sm px-7 button">Continue</button>
+        </div>
+      </div>
     </article>
   </section>
 
-  <!-- Selected pledge  start -->
-  Enter your pledge
-  $200
-  Continue
   <!-- Selected pledge end -->
 
   <!-- Selection modal end -->
