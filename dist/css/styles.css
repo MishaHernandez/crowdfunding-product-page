@@ -551,6 +551,30 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: 'Commissioner';
+
+  src: url('../fonts/Commissioner-Regular.ttf');
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+
+  src: url('../fonts/Commissioner-Medium.ttf');
+
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+
+  src: url('../fonts/Commissioner-Bold.ttf');
+
+  font-weight: 700;
+}
+
 .container {
   width: 100%;
 }
@@ -583,6 +607,67 @@ video {
   .container {
     max-width: 1536px;
   }
+}
+
+.card {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.375rem;
+  border-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.card-modal {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.375rem;
+  border-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  --tw-bg-opacity: 1;
+  background-color: rgba(59.925, 179.77499999999998, 171.785, var(--tw-bg-opacity));
+  border-radius: 9999px;
+  display: inline-block;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.button-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 9999px;
+  border-width: 2px;
+  display: inline-block;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.button-disable {
+  --tw-bg-opacity: 1;
+  background-color: rgba(122.39999999999999, 122.39999999999999, 122.39999999999999, var(--tw-bg-opacity));
+  border-radius: 9999px;
+  display: inline-block;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.paragraph {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1.625;
+  --tw-text-opacity: 1;
+  color: rgba(122.39999999999999, 122.39999999999999, 122.39999999999999, var(--tw-text-opacity));
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -31898,67 +31983,6 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
-}
-
-.card {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  border-radius: 0.375rem;
-  border-width: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.card-modal {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  border-radius: 0.375rem;
-  border-width: 1px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button {
-  --tw-bg-opacity: 1;
-  background-color: rgba(59.925, 179.77499999999998, 171.785, var(--tw-bg-opacity));
-  border-radius: 9999px;
-  display: inline-block;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgba(243, 244, 246, var(--tw-text-opacity));
-}
-
-.button-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  border-radius: 9999px;
-  border-width: 2px;
-  display: inline-block;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
-}
-
-.button-disable {
-  --tw-bg-opacity: 1;
-  background-color: rgba(122.39999999999999, 122.39999999999999, 122.39999999999999, var(--tw-bg-opacity));
-  border-radius: 9999px;
-  display: inline-block;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgba(243, 244, 246, var(--tw-text-opacity));
-}
-
-.paragraph {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  line-height: 1.625;
-  --tw-text-opacity: 1;
-  color: rgba(122.39999999999999, 122.39999999999999, 122.39999999999999, var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
