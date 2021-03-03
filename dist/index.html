@@ -14,6 +14,7 @@
 </head>
 
 <body class="bg-gray-50 font-custom">
+  <div id="overlay" class="fixed z-10 hidden w-screen h-screen bg-black opacity-50"></div>
   <picture class="absolute -z-10">
     <source srcset="images/image-hero-desktop.jpg" media="(min-width: 751px)">
     <source srcset="images/image-hero-mobile.jpg" media="(max-width: 750px)">
@@ -23,23 +24,21 @@
   <header class="relative flex items-center justify-between px-6 py-8 mb-40">
     <img src="images/logo.svg" alt="crowdfund logo">
     <nav>
-      <img src="images/icon-hamburger.svg" alt="hamburger icon">
-     <ul class="absolute inset-x-0 z-10 hidden mx-auto text-lg font-medium bg-white rounded-lg w-card-mb top-20">
+      <img id="menu" src="images/icon-hamburger.svg" alt="hamburger icon">
+      <ul class="absolute inset-x-0 z-10 hidden mx-auto text-lg font-medium bg-white rounded-lg w-card-mb top-20">
         <li class="py-5 pl-5 border-b-2">About</li>
         <li class="py-5 pl-5 border-b-2">Discover</li>
         <li class="py-5 pl-5">Get Started</li>
-     </ul>
+      </ul>
     </nav>
   </header>
 <!-- cta card -->
   <article class="relative mb-6 text-center card w-card-mb">
-    <img class="absolute inset-x-0 inline-block mx-auto -top-7"
-      src="images/logo-mastercraft.svg"
-      alt="Mastercraft logo">
+    <img class="absolute inset-x-0 inline-block mx-auto -top-7" src="images/logo-mastercraft.svg" alt="Mastercraft logo">
     <h1 class="mx-auto mt-8 mb-4 text-xl font-bold leading-tight w-52">Mastercraft Bamboo Monitor Riser</h1>
     <p class="mt-4 mb-6 paragraph">A beautifully handcrafted monitor stand to reduce neck and eye strain.</p>
     <div class="flex items-center justify-center mb-5 gap-x-2">
-      <a class="py-4 button px-11" href="#" title="back this project">Back this project</a>
+      <a id="btnBack" class="py-4 button px-11" href="#" title="back this project">Back this project</a>
       <div class=""><img src="images/icon-bookmark.svg" alt="Bookmark icon"><span class="hidden">Bookmark</span></div>
     </div>
   </article>
@@ -108,7 +107,7 @@
 
   <!-- Selection modal start -->
 
-  <section class="relative hidden card w-card-mb">
+  <section id="modalDefault" class="absolute inset-x-0 hidden top-28 card w-card-mb">
     <img class="absolute top-9 right-6" src="images/icon-close-modal.svg" alt="close icon">
     <h3 class="mt-2 mb-5 text-lg font-bold">Back this project</h3>
     <p class="mb-6 paragraph">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
@@ -204,14 +203,14 @@
 
   <!-- Success modal start -->
 
-  <div class="hidden text-center card w-card-mb">
+  <div class="absolute inset-x-0 hidden text-center card w-card-mb top-36">
     <img class="inline-block mt-2 mb-5" src="images/icon-check.svg" alt="check icon">
     <h3 class="mb-5 text-lg font-bold">Thanks for your support!</h3>
     <p class="mb-7 paragraph">
       Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
       an email once our campaign is completed.
     </p>
-    <button class="inline-block px-8 py-3 text-sm button">Got it!</button>
+    <button id="closeModalSuccess" class="inline-block px-8 py-3 text-sm button">Got it!</button>
   </div>
   <!-- Success modal end -->
 
@@ -220,5 +219,6 @@
     Coded by <a class="text-link" href="#" title="Author page">Mijail Hernandez</a>.
   </div>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
