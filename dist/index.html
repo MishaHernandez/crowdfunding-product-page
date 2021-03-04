@@ -57,7 +57,7 @@
     </div>
   </div>
 <!-- card about project -->
-  <section class="mb-14 card w-card-mb">
+  <section id="products" class="mb-14 card w-card-mb">
     <h3 class="mt-4 mb-5 text-xl font-bold">About this project</h3>
   
     <p class="mb-6 paragraph">
@@ -112,24 +112,33 @@
     <h3 class="mt-2 mb-5 text-lg font-bold">Back this project</h3>
     <p class="mb-6 paragraph">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
   
-    <article class="mb-6 border-gray-300 card">
-      <h4 class="flex items-center mb-6 text-sm font-bold">
-        <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span> Pledge with no reward</h4>
-      <p class="mb-6 paragraph">
-        Choose to support us without a reward if you simply believe in our project. As a backer, 
-        you will be signed up to receive product updates via email.
-      </p>
+    <article class="mb-6 border-gray-300 card-modal">
+      <div class="px-6 py-5">
+        <label class="flex items-center mb-6 text-sm font-bold">
+          <input class="hidden" type="radio" id="radio" name="pledge">
+          <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>Pledge with no reward
+        </label>
+        <p class="mb-6 paragraph">
+          Choose to support us without a reward if you simply believe in our project. As a backer, 
+          you will be signed up to receive product updates via email.
+        </p>
+      </div>
+      <!-- Selected pledge start -->
+      <div class="hidden px-6 py-5 text-right border-t-2">
+        <button class="py-3 text-sm px-7 button">Continue</button>
+      </div>
     </article>
   
     <article class="mb-6 border-gray-300 card-modal">
       <div class="px-6 py-5">
-       <div class="flex items-center mb-6">
+        <label class="flex items-center mb-6">
+          <input class="hidden" type="radio" id="radio" name="pledge">
           <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>
           <div>
             <h4 class="flex items-center mb-1 text-sm font-bold">Bamboo Stand</h4>
             <p class="text-sm font-medium text-cyan-100">Pledge $25 or more</p>
           </div>
-       </div>
+        </label>
         <p class="mb-6 paragraph">
           You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
           you’ll be added to a special Backer member list.
@@ -145,47 +154,52 @@
         </div>
       </div>
     </article>
-  
     <!-- Selected pledge end -->
   
-    <article class="mb-6 border-gray-300 card">
-     <div class="flex items-center mb-6">
-        <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>
-        <div>
-          <h4 class="flex items-center mb-1 text-sm font-bold">Black Edition Stand</h4>
-          <p class="text-sm font-medium text-cyan-100">Pledge $75 or more</p>
-        </div>
-     </div>
-      <p class="mb-6 paragraph">
-        You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-        member list. Shipping is included.
-      </p>
-      <div class="flex items-center"><span class="mr-2 text-lg font-bold">64</span> <span class="text-darkgray">left</span></div>
+    <article class="mb-6 border-gray-300 card-modal">
+     <div class="px-6 py-5">
+       <label class="flex items-center mb-6">
+         <input class="hidden" type="radio" id="radio" name="pledge">
+          <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>
+          <div>
+            <h4 class="flex items-center mb-1 text-sm font-bold">Black Edition Stand</h4>
+            <p class="text-sm font-medium text-cyan-100">Pledge $75 or more</p>
+          </div>
+       </label>
+       <p class="mb-6 paragraph">
+         You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+         member list. Shipping is included.
+        </p>
+        <div class="flex items-center"><span class="mr-2 text-lg font-bold">64</span> <span class="text-darkgray">left</span></div>
+      </div>
       <!-- Selected pledge start -->
       <div class="hidden px-6 py-5 border-t-2">
-        <p class="mb-4 text-center paragraph">Enter your pledge</p>
-        <div class="flex justify-between">
-          <button class="px-8 py-3 text-sm button-secondary">$75</button>
-          <button class="py-3 text-sm px-7 button">Continue</button>
-        </div>
+      <p class="mb-4 text-center paragraph">Enter your pledge</p>
+      <div class="flex justify-between">
+        <button class="px-8 py-3 text-sm button-secondary">$75</button>
+        <button class="py-3 text-sm px-7 button">Continue</button>
+      </div>
       </div>
     </article>
   
     <!-- Selected pledge end -->
   
-    <article class="mb-6 border-gray-300 opacity-50 card">
-      <div class="flex items-center mb-6">
-        <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>
-        <div>
-          <h4 class="flex items-center mb-1 text-sm font-bold">Mahogany Special Edition</h4>
-          <p class="text-sm font-medium text-cyan-100">Pledge $200 or more</p>
-        </div>
+    <article class="mb-6 border-gray-300 opacity-50 card-modal">
+      <div class="px-6 py-5">
+        <label class="flex items-center mb-6">
+          <input class="hidden" type="radio" id="radio" name="pledge">
+          <span class="inline-block w-6 h-6 mr-4 border-2 rounded-full"></span>
+          <div>
+            <h4 class="flex items-center mb-1 text-sm font-bold">Mahogany Special Edition</h4>
+            <p class="text-sm font-medium text-cyan-100">Pledge $200 or more</p>
+          </div>
+        </label>
+        <p class="mb-6 paragraph">
+          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+          to our Backer member list. Shipping is included.
+        </p>
+        <div class="flex items-center"><span class="mr-2 text-lg font-bold">0</span> <span class="text-darkgray">left</span></div>
       </div>
-      <p class="mb-6 paragraph">
-        You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-        to our Backer member list. Shipping is included.
-      </p>
-      <div class="flex items-center"><span class="mr-2 text-lg font-bold">0</span> <span class="text-darkgray">left</span></div>
       <!-- Selected pledge start -->
       <div class="hidden px-6 py-5 border-t-2">
         <p class="mb-4 text-center paragraph">Enter your pledge</p>
@@ -203,7 +217,7 @@
 
   <!-- Success modal start -->
 
-  <div class="absolute inset-x-0 z-20 hidden text-center card w-card-mb top-36">
+  <div id="modalSuccess" class="fixed inset-0 z-20 hidden m-auto text-center card w-card-mb h-96">
     <img class="inline-block mt-2 mb-5" src="images/icon-check.svg" alt="check icon">
     <h3 class="mb-5 text-lg font-bold">Thanks for your support!</h3>
     <p class="mb-7 paragraph">
