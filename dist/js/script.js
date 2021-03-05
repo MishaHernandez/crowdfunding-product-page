@@ -45,6 +45,15 @@ modalDeault.addEventListener("click", (e) => {
         overlay.classList.remove("hidden");
         modalSuccess.classList.remove("hidden");
         modalDeault.classList.add("hidden");
+
+    } else if (e.target.matches("input[type='radio']")) {
+        modalDeault.querySelectorAll("input[type='radio']").forEach(elem => elem.nextElementSibling.firstElementChild.classList.add("hidden"));
+        e.target.parentElement.querySelector("span.w-3.h-3").classList.remove("hidden");
+        
+        if (e.target.checked) {
+            modalDeault.querySelectorAll("div.px-6.py-5.border-t-2").forEach(elem => elem.classList.add("hidden"));
+            e.target.parentElement.parentElement.nextElementSibling.classList.remove("hidden");
+        }
     }
 })
 
