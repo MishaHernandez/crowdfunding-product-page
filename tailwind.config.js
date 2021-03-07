@@ -3,6 +3,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      maxWidth: { 
+        header: '1155px', 
+        main: '730px',
+        success: '540px',
+      },
       fontFamily: { custom: ['commissioner'], },
       colors: {
         'cyan-100': 'hsl(176, 50%, 47%)',

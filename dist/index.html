@@ -10,7 +10,6 @@
   
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body class="bg-gray-50 font-custom">
   <div id="overlay" class="fixed z-10 hidden w-screen h-screen bg-black opacity-50"></div>
   <picture class="absolute -z-10">
@@ -20,7 +19,7 @@
   </picture>
 
 <!---------------------- NAVBAR ---------------------->
-  <header class="relative flex items-center justify-between px-6 py-8 mb-40">
+  <header class="relative flex items-center justify-between px-6 py-8 mx-auto mb-40 max-w-header">
     <img class="relative z-20" src="images/logo.svg" alt="crowdfund logo">
     <nav>
       <img class="relative z-20" id="menu" src="images/icon-hamburger.svg" alt="hamburger icon">
@@ -33,18 +32,18 @@
   </header>
 
 <!---------------------- CTA CARD ---------------------->
-  <article class="relative mb-6 text-center card w-card-mb">
+  <article class="relative mb-6 text-center card w-card-mb max-w-main lg:px-12">
     <img class="absolute inset-x-0 inline-block mx-auto -top-7" src="images/logo-mastercraft.svg" alt="Mastercraft logo">
-    <h1 class="mx-auto mt-8 mb-4 text-xl font-bold leading-tight w-52">Mastercraft Bamboo Monitor Riser</h1>
+    <h1 class="mx-auto mt-8 mb-4 text-xl font-bold leading-tight w-52 lg:w-auto">Mastercraft Bamboo Monitor Riser</h1>
     <p class="mt-4 mb-6 paragraph">A beautifully handcrafted monitor stand to reduce neck and eye strain.</p>
-    <div class="flex items-center justify-center mb-5 gap-x-2">
+    <div class="flex items-center justify-center mb-5 gap-x-2 lg:justify-between">
       <a id="btnBack" class="py-4 button px-11" href="#" title="back this project">Back this project</a>
       <div class=""><img src="images/icon-bookmark.svg" alt="Bookmark icon"><span class="hidden">Bookmark</span></div>
     </div>
   </article>
 
   <!----------------- STATISTIC CARD ----------------->
-  <div class="mb-6 text-center card w-card-mb">
+  <div class="mb-6 text-center card w-card-mb max-w-main lg:px-12">
     <h2 class="mt-6 text-3xl font-bold">$89,914</h2>
     <p class="mt-1.5 mb-6 paragraph">of $100,000 backed</p>
     <hr class="w-20 mx-auto">
@@ -60,7 +59,7 @@
 
 <!---------------------------------- SECTION PRODUCTS ---------------------------------->
 
-  <section id="products" class="mb-14 card w-card-mb">
+  <section id="products" class="mb-14 card w-card-mb max-w-main lg:px-12">
     <h3 class="mt-4 mb-5 text-xl font-bold">About this project</h3>
   
     <p class="mb-6 paragraph">
@@ -113,7 +112,7 @@
 
   <!-------------------------- SECTION MODAL START -------------------------->
 
-  <section id="modalDefault" class="absolute inset-x-0 z-20 hidden top-28 card w-card-mb">
+  <section id="modalDefault" class="absolute inset-x-0 z-20 hidden top-28 card w-card-mb max-w-main">
     <img class="absolute top-9 right-6" src="images/icon-close-modal.svg" alt="close icon">
     <h3 class="mt-2 mb-5 text-lg font-bold">Back this project</h3>
     <p class="mb-6 paragraph">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
@@ -231,7 +230,7 @@
 
   <!-------------------------------- SUCCESS MODAL START -------------------------------->
   
-  <div id="modalSuccess" class="fixed inset-0 z-20 hidden m-auto text-center card w-card-mb h-96">
+  <div id="modalSuccess" class="fixed inset-0 z-20 hidden m-auto text-center card w-card-mb h-96 max-w-success">
     <img class="inline-block mt-2 mb-5" src="images/icon-check.svg" alt="check icon">
     <h3 class="mb-5 text-lg font-bold">Thanks for your support!</h3>
     <p class="mb-7 paragraph">
