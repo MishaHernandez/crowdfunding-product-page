@@ -23,7 +23,7 @@
     <img class="relative z-20" src="images/logo.svg" alt="crowdfund logo">
     <nav>
       <img class="relative z-20 lg:hidden" id="menu" src="images/icon-hamburger.svg" alt="hamburger icon">
-      <ul class="absolute inset-x-0 z-10 mx-auto text-lg font-medium bg-white rounded-lg w-card-mb top-20 lg:static lg:flex lg:bg-transparent lg:text-white lg:font-normal lg:text-sm lg:w-auto">
+      <ul class="absolute inset-x-0 z-10 hidden mx-auto text-lg font-medium bg-white rounded-lg w-card-mb top-20 lg:static lg:flex lg:bg-transparent lg:text-white lg:font-normal lg:text-sm lg:w-auto">
         <li class="pl-5 border-b-2 lg:pl-0 lg:border-0"><a href="#" class="block py-5 lg:py-0">About</a></li>
         <li class="pl-5 border-b-2 lg:pl-8 lg:border-0"><a href="#" class="block py-5 lg:py-0">Discover</a></li>
         <li class="pl-5 lg:pl-8"><a href="#" class="block py-5 lg:py-0">Get Started</a></li>
@@ -43,15 +43,23 @@
   </article>
 
   <!----------------- STATISTIC CARD ----------------->
-  <div class="mb-6 text-center card w-card-mb max-w-main lg:px-12">
-    <h2 class="mt-6 text-3xl font-bold">$89,914</h2>
-    <p class="mt-1.5 mb-6 paragraph">of $100,000 backed</p>
-    <hr class="w-20 mx-auto">
-    <h2 class="mt-6 text-3xl font-bold">5,007</h2>
-    <p class="mt-1.5 mb-6 paragraph">total backers</p>
-    <hr class="w-20 mx-auto">
-    <h2 class="mt-6 text-3xl font-bold">56</h2>
-    <p class="mt-1.5 mb-6 paragraph">days left</p>
+  <div class="mb-6 text-center card w-card-mb max-w-main lg:px-12 lg:text-left lg:p-12 lg:py-5">
+    <div class="lg:flex">
+      <div class="lg:flex-1">
+        <h2 class="mt-6 text-3xl font-bold">$89,914</h2>
+        <p class="mt-1.5 mb-6 paragraph">of $100,000 backed</p>
+      </div>
+      <hr class="w-20 mx-auto lg:transform lg:rotate-90 lg:translate-y-14 lg:w-16">
+      <div class="lg:flex-1">
+        <h2 class="mt-6 text-3xl font-bold">5,007</h2>
+        <p class="mt-1.5 mb-6 paragraph">total backers</p>
+      </div>
+      <hr class="w-20 mx-auto lg:transform lg:rotate-90 lg:translate-y-14 lg:w-16">
+      <div class="lg:flex-1">
+        <h2 class="mt-6 text-3xl font-bold">56</h2>
+        <p class="mt-1.5 mb-6 paragraph">days left</p>
+      </div>
+    </div>
     <div class="h-3 mt-5 mb-5 bg-gray-100 rounded-md">
       <div class="w-4/5 h-full rounded-md bg-cyan-100"></div>
     </div>
