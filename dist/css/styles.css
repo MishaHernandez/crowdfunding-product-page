@@ -12005,6 +12005,10 @@ video {
   line-height: 1;
 }
 
+.text-2\.5xl {
+  font-size: 1.75rem;
+}
+
 .leading-3 {
   line-height: .75rem;
 }
@@ -31997,6 +32001,16 @@ video {
           animation: bounce 1s infinite;
 }
 
+picture::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(rgba(0,0,0,.4) 10%, rgba(255,255,255,0) 30%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -43365,6 +43379,10 @@ video {
   .sm\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .sm\:text-2\.5xl {
+    font-size: 1.75rem;
   }
 
   .sm\:leading-3 {
@@ -74651,6 +74669,10 @@ video {
     line-height: 1;
   }
 
+  .md\:text-2\.5xl {
+    font-size: 1.75rem;
+  }
+
   .md\:leading-3 {
     line-height: .75rem;
   }
@@ -105933,6 +105955,10 @@ video {
   .lg\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .lg\:text-2\.5xl {
+    font-size: 1.75rem;
   }
 
   .lg\:leading-3 {
@@ -137219,6 +137245,10 @@ video {
     line-height: 1;
   }
 
+  .xl\:text-2\.5xl {
+    font-size: 1.75rem;
+  }
+
   .xl\:leading-3 {
     line-height: .75rem;
   }
@@ -168501,6 +168531,10 @@ video {
   .\32xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .\32xl\:text-2\.5xl {
+    font-size: 1.75rem;
   }
 
   .\32xl\:leading-3 {

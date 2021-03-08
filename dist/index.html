@@ -19,14 +19,14 @@
   </picture>
 
 <!---------------------- NAVBAR ---------------------->
-  <header class="relative flex items-center justify-between px-6 py-8 mx-auto mb-40 max-w-header">
+  <header class="relative flex items-center justify-between px-6 py-8 mx-auto mb-40 max-w-header lg:mb-52">
     <img class="relative z-20" src="images/logo.svg" alt="crowdfund logo">
     <nav>
-      <img class="relative z-20" id="menu" src="images/icon-hamburger.svg" alt="hamburger icon">
-      <ul class="absolute inset-x-0 z-10 hidden mx-auto text-lg font-medium bg-white rounded-lg w-card-mb top-20">
-        <li class="pl-5 border-b-2"><a href="#" class="block py-5">About</a></li>
-        <li class="pl-5 border-b-2"><a href="#" class="block py-5">Discover</a></li>
-        <li class="pl-5"><a href="#" class="block py-5">Get Started</a></li>
+      <img class="relative z-20 lg:hidden" id="menu" src="images/icon-hamburger.svg" alt="hamburger icon">
+      <ul class="absolute inset-x-0 z-10 mx-auto text-lg font-medium bg-white rounded-lg w-card-mb top-20 lg:static lg:flex lg:bg-transparent lg:text-white lg:font-normal lg:text-sm lg:w-auto">
+        <li class="pl-5 border-b-2 lg:pl-0 lg:border-0"><a href="#" class="block py-5 lg:py-0">About</a></li>
+        <li class="pl-5 border-b-2 lg:pl-8 lg:border-0"><a href="#" class="block py-5 lg:py-0">Discover</a></li>
+        <li class="pl-5 lg:pl-8"><a href="#" class="block py-5 lg:py-0">Get Started</a></li>
       </ul>
     </nav>
   </header>
@@ -34,11 +34,11 @@
 <!---------------------- CTA CARD ---------------------->
   <article class="relative mb-6 text-center card w-card-mb max-w-main lg:px-12">
     <img class="absolute inset-x-0 inline-block mx-auto -top-7" src="images/logo-mastercraft.svg" alt="Mastercraft logo">
-    <h1 class="mx-auto mt-8 mb-4 text-xl font-bold leading-tight w-52 lg:w-auto">Mastercraft Bamboo Monitor Riser</h1>
-    <p class="mt-4 mb-6 paragraph">A beautifully handcrafted monitor stand to reduce neck and eye strain.</p>
+    <h1 class="mx-auto mt-8 mb-4 text-xl font-bold leading-tight w-52 lg:w-auto lg:text-2.5xl">Mastercraft Bamboo Monitor Riser</h1>
+    <p class="mt-4 mb-6 paragraph lg:text-base lg:mb-9">A beautifully handcrafted monitor stand to reduce neck and eye strain.</p>
     <div class="flex items-center justify-center mb-5 gap-x-2 lg:justify-between">
       <a id="btnBack" class="py-4 button px-11" href="#" title="back this project">Back this project</a>
-      <div class=""><img src="images/icon-bookmark.svg" alt="Bookmark icon"><span class="hidden">Bookmark</span></div>
+      <div class="lg:bg-gray-100 lg:flex lg:items-center lg:rounded-full"><img src="images/icon-bookmark.svg" alt="Bookmark icon"><span class="hidden lg:block lg:font-bold lg:text-darkgray lg:ml-4 lg:mr-6">Bookmark</span></div>
     </div>
   </article>
 
@@ -57,7 +57,7 @@
     </div>
   </div>
 
-<!---------------------------------- SECTION PRODUCTS ---------------------------------->
+<!------------------- SECTION PRODUCTS ------------------->
 
   <section id="products" class="mb-14 card w-card-mb max-w-main lg:px-12">
     <h3 class="mt-4 mb-5 text-xl font-bold">About this project</h3>

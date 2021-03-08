@@ -9,6 +9,9 @@ module.exports = {
         success: '540px',
       },
       fontFamily: { custom: ['commissioner'], },
+      fontSize: {
+        '2.5xl': '1.75rem',
+      },
       colors: {
         'cyan-100': 'hsl(176, 50%, 47%)',
         'cyan-200': 'hsl(176, 72%, 28%)',
