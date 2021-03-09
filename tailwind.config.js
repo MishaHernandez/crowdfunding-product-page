@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      // lineHeight: {
+      //   xl: '112px',
+      // },
       maxWidth: { 
         header: '1155px', 
         main: '730px',
