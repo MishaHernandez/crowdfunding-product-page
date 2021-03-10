@@ -74,6 +74,9 @@ products.addEventListener("click", (e)=> {
 
 modalDeault.addEventListener("click", (e) => {
     if (e.target.matches("button")) {
+        document.getElementById("amount").textContent = "$" + (parseInt((document.getElementById("amount").textContent).replace(/,|\$/gi,"")) + parseInt(e.target.previousElementSibling.firstElementChild.value)).toLocaleString();
+        document.getElementById("backers").textContent = (parseInt((document.getElementById("backers").textContent).replace(",","")) + 1).toLocaleString();
+
         overlay.classList.remove("hidden");
         modalSuccess.classList.remove("hidden");
         modalDeault.classList.add("hidden");
@@ -89,7 +92,6 @@ modalDeault.addEventListener("click", (e) => {
     } else if (e.target.matches("input[type='radio']")) {
         modalDeault.querySelectorAll("section article").forEach(elem => elem.className = "relative mb-6 border-gray-300 card-modal lg:pt-2 lg:rounded-lg");
         modalDeault.querySelectorAll("input[type='radio']").forEach(elem => elem.nextElementSibling.nextElementSibling.firstElementChild.classList.add("hidden"));
-        // modalDeault.querySelectorAll("input[type='radio']").forEach(elem => console.log(elem.nextElementSibling.nextElementSibling.firstElementChild));
         e.target.parentElement.parentElement.parentElement.className = "relative mb-6 border-2 border-cyan-100 card-modal lg:pt-2 lg:rounded-lg";
         e.target.parentElement.querySelector("span.w-3.h-3").classList.remove("hidden");
         
