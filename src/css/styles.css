@@ -55,3 +55,13 @@ picture::before {
     right: 0;
     bottom: 0;
 }
+
+@media (min-width: 1024px) {
+    .close-modal:hover path {
+        opacity: 1;
+    }
+    
+    .title-product:hover ~ span{
+        border-color: hsl(176, 50%, 47%);
+    }
+}

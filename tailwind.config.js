@@ -3,9 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      // lineHeight: {
-      //   xl: '112px',
-      // },
+      borderWidth: {
+        '1': '1px',
+      },
       maxWidth: { 
         header: '1155px', 
         main: '730px',
@@ -22,7 +22,8 @@ module.exports = {
         link: 'hsl(228, 45%, 44%)',
       },
       zIndex: { '-10': '-10', },
-      width: { 'card-mb': '87%', }
+      width: { 'card-mb': '87%', },
+      height: { 94: '22rem', }
     },
   },
   variants: {

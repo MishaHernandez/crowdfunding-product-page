@@ -1530,6 +1530,18 @@ video {
   border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
+.divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -11120,6 +11132,10 @@ video {
   border-width: 0px;
 }
 
+.border-1 {
+  border-width: 1px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -11150,6 +11166,22 @@ video {
 
 .border-l-0 {
   border-left-width: 0px;
+}
+
+.border-t-1 {
+  border-top-width: 1px;
+}
+
+.border-r-1 {
+  border-right-width: 1px;
+}
+
+.border-b-1 {
+  border-bottom-width: 1px;
+}
+
+.border-l-1 {
+  border-left-width: 1px;
 }
 
 .border-t-2 {
@@ -11842,6 +11874,10 @@ video {
 
 .h-80 {
   height: 20rem;
+}
+
+.h-94 {
+  height: 22rem;
 }
 
 .h-96 {
@@ -32011,6 +32047,16 @@ picture::before {
   bottom: 0;
 }
 
+@media (min-width: 1024px) {
+  .close-modal:hover path {
+    opacity: 1;
+  }
+
+  .title-product:hover ~ span{
+    border-color: hsl(176, 50%, 47%);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -32904,6 +32950,18 @@ picture::before {
     --tw-divide-x-reverse: 0;
     border-right-width: calc(0px * var(--tw-divide-x-reverse));
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
+  .sm\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .sm\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .sm\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -42496,6 +42554,10 @@ picture::before {
     border-width: 0px;
   }
 
+  .sm\:border-1 {
+    border-width: 1px;
+  }
+
   .sm\:border-2 {
     border-width: 2px;
   }
@@ -42526,6 +42588,22 @@ picture::before {
 
   .sm\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .sm\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .sm\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .sm\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .sm\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .sm\:border-t-2 {
@@ -43218,6 +43296,10 @@ picture::before {
 
   .sm\:h-80 {
     height: 20rem;
+  }
+
+  .sm\:h-94 {
+    height: 22rem;
   }
 
   .sm\:h-96 {
@@ -64194,6 +64276,18 @@ picture::before {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .md\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .md\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .md\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -73784,6 +73878,10 @@ picture::before {
     border-width: 0px;
   }
 
+  .md\:border-1 {
+    border-width: 1px;
+  }
+
   .md\:border-2 {
     border-width: 2px;
   }
@@ -73814,6 +73912,22 @@ picture::before {
 
   .md\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .md\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .md\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .md\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .md\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .md\:border-t-2 {
@@ -74506,6 +74620,10 @@ picture::before {
 
   .md\:h-80 {
     height: 20rem;
+  }
+
+  .md\:h-94 {
+    height: 22rem;
   }
 
   .md\:h-96 {
@@ -95482,6 +95600,18 @@ picture::before {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .lg\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .lg\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .lg\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -105072,6 +105202,10 @@ picture::before {
     border-width: 0px;
   }
 
+  .lg\:border-1 {
+    border-width: 1px;
+  }
+
   .lg\:border-2 {
     border-width: 2px;
   }
@@ -105102,6 +105236,22 @@ picture::before {
 
   .lg\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .lg\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .lg\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .lg\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .lg\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .lg\:border-t-2 {
@@ -105794,6 +105944,10 @@ picture::before {
 
   .lg\:h-80 {
     height: 20rem;
+  }
+
+  .lg\:h-94 {
+    height: 22rem;
   }
 
   .lg\:h-96 {
@@ -126770,6 +126924,18 @@ picture::before {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .xl\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .xl\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .xl\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -136360,6 +136526,10 @@ picture::before {
     border-width: 0px;
   }
 
+  .xl\:border-1 {
+    border-width: 1px;
+  }
+
   .xl\:border-2 {
     border-width: 2px;
   }
@@ -136390,6 +136560,22 @@ picture::before {
 
   .xl\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .xl\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .xl\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .xl\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .xl\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .xl\:border-t-2 {
@@ -137082,6 +137268,10 @@ picture::before {
 
   .xl\:h-80 {
     height: 20rem;
+  }
+
+  .xl\:h-94 {
+    height: 22rem;
   }
 
   .xl\:h-96 {
@@ -158058,6 +158248,18 @@ picture::before {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .\32xl\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .\32xl\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .\32xl\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -167648,6 +167850,10 @@ picture::before {
     border-width: 0px;
   }
 
+  .\32xl\:border-1 {
+    border-width: 1px;
+  }
+
   .\32xl\:border-2 {
     border-width: 2px;
   }
@@ -167678,6 +167884,22 @@ picture::before {
 
   .\32xl\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .\32xl\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .\32xl\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .\32xl\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .\32xl\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .\32xl\:border-t-2 {
@@ -168370,6 +168592,10 @@ picture::before {
 
   .\32xl\:h-80 {
     height: 20rem;
+  }
+
+  .\32xl\:h-94 {
+    height: 22rem;
   }
 
   .\32xl\:h-96 {

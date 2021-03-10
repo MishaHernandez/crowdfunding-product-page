@@ -88,7 +88,8 @@ modalDeault.addEventListener("click", (e) => {
 
     } else if (e.target.matches("input[type='radio']")) {
         modalDeault.querySelectorAll("section article").forEach(elem => elem.className = "relative mb-6 border-gray-300 card-modal lg:pt-2 lg:rounded-lg");
-        modalDeault.querySelectorAll("input[type='radio']").forEach(elem => elem.nextElementSibling.firstElementChild.classList.add("hidden"));
+        modalDeault.querySelectorAll("input[type='radio']").forEach(elem => elem.nextElementSibling.nextElementSibling.firstElementChild.classList.add("hidden"));
+        // modalDeault.querySelectorAll("input[type='radio']").forEach(elem => console.log(elem.nextElementSibling.nextElementSibling.firstElementChild));
         e.target.parentElement.parentElement.parentElement.className = "relative mb-6 border-2 border-cyan-100 card-modal lg:pt-2 lg:rounded-lg";
         e.target.parentElement.querySelector("span.w-3.h-3").classList.remove("hidden");
         
