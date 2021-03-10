@@ -6,6 +6,20 @@ const overlay = document.getElementById("overlay");
 const modalSuccess = document.getElementById("modalSuccess");
 const products = document.getElementById("products");
 
+document.getElementById("cta").addEventListener("click", e => {
+    if (e.target.id === "bookmark" && e.target.lastElementChild.classList.contains("lg:text-darkgray")) {
+        e.target.firstElementChild.firstElementChild.children[0].setAttribute("fill", "hsl(176, 50%, 47%)");
+        e.target.firstElementChild.firstElementChild.children[1].setAttribute("fill", "#fff");
+        e.target.lastElementChild.classList.replace("lg:text-darkgray", "lg:text-cyan-100");
+        e.target.lastElementChild.textContent = "Bookmarked";
+    } else if (e.target.id === "bookmark" && e.target.lastElementChild.classList.contains("lg:text-cyan-100")) {
+        e.target.firstElementChild.firstElementChild.children[0].setAttribute("fill", "#2F2F2F");
+        e.target.firstElementChild.firstElementChild.children[1].setAttribute("fill", "#B1B1B1");
+        e.target.lastElementChild.classList.replace("lg:text-cyan-100", "lg:text-darkgray");
+        e.target.lastElementChild.textContent = "Bookmark";
+    }
+})
+
 menuIcon.addEventListener("click", ()=> {
     const menu = menuIcon.nextElementSibling;
     menu.classList.toggle("hidden");
