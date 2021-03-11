@@ -58,7 +58,7 @@ modalDeault.firstElementChild.addEventListener("click", ()=> {
 })
 
 products.addEventListener("click", (e)=> {
-    if (e.target.matches("button")) {
+    if (e.target.matches("a.button")) {
         overlay.classList.remove("hidden");
         modalDeault.classList.remove("hidden");
 
