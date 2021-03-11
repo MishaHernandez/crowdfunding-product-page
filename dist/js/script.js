@@ -76,6 +76,8 @@ modalDeault.addEventListener("click", (e) => {
     if (e.target.matches("button")) {
         document.getElementById("amount").textContent = "$" + (parseInt((document.getElementById("amount").textContent).replace(/,|\$/gi,"")) + parseInt(e.target.previousElementSibling.firstElementChild.value)).toLocaleString();
         document.getElementById("backers").textContent = (parseInt((document.getElementById("backers").textContent).replace(",","")) + 1).toLocaleString();
+        // console.log((parseInt((document.getElementById("amount").textContent).replace(/,|\$/gi, "")) * 100) / 100000);
+        document.getElementById("progressbar").style.width = ((parseInt((document.getElementById("amount").textContent).replace(/,|\$/gi, "")) * 100) / 100000) + "%";
 
         overlay.classList.remove("hidden");
         modalSuccess.classList.remove("hidden");
