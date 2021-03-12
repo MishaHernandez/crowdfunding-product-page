@@ -32052,6 +32052,10 @@ picture::before {
 }
 
 @media (min-width: 1024px) {
+  .bookmark:hover circle {
+    fill: hsl(0, 0%, 48%);
+  }
+
   .close-modal:hover path {
     opacity: 1;
   }

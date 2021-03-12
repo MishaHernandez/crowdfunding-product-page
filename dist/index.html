@@ -20,9 +20,9 @@
 
 <!---------------------- NAVBAR ---------------------->
   <header class="relative flex items-center justify-between px-6 py-8 mx-auto mb-40 max-w-header lg:mb-52">
-    <img class="relative z-20" src="images/logo.svg" alt="crowdfund logo">
+    <img class="relative" src="images/logo.svg" alt="crowdfund logo">
     <nav>
-      <img class="relative z-20 lg:hidden" id="menu" src="images/icon-hamburger.svg" alt="hamburger icon">
+      <img class="relative lg:hidden" id="menu" src="images/icon-hamburger.svg" alt="hamburger icon">
       <ul class="absolute inset-x-0 z-10 hidden mx-auto text-lg font-medium bg-white rounded-lg w-card-mb top-20 lg:static lg:flex lg:bg-transparent lg:text-white lg:font-normal lg:text-sm lg:w-auto">
         <li class="pl-5 border-b-2 lg:pl-0 lg:border-0"><a href="#" class="block py-5 lg:py-0">About</a></li>
         <li class="pl-5 border-b-2 lg:pl-8 lg:border-0"><a href="#" class="block py-5 lg:py-0">Discover</a></li>
@@ -38,7 +38,7 @@
     <p class="mt-4 mb-6 paragraph lg:text-base lg:mb-9">A beautifully handcrafted monitor stand to reduce neck and eye strain.</p>
     <div class="flex items-center justify-center mb-5 gap-x-2 lg:justify-between">
       <a id="btnBack" class="py-4 button px-11 lg:hover:bg-cyan-200" href="#" title="back this project">Back this project</a>
-      <div id="bookmark" class="lg:cursor-pointer lg:bg-gray-100 lg:flex lg:items-center lg:rounded-full">
+      <div id="bookmark" class="lg:cursor-pointer lg:bg-gray-100 lg:flex lg:items-center lg:rounded-full bookmark">
         <svg class="pointer-events-none" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd"> <circle fill="#2F2F2F" cx="28" cy="28" r="28" /> <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" /> </g>
         </svg>
@@ -139,7 +139,7 @@
 
   <section id="modalDefault" class="absolute inset-x-0 z-20 hidden top-28 card w-card-mb max-w-main lg:px-12 lg:rounded-xl">
     <!-- <img class="absolute top-9 right-6 lg:cursor-pointer" src="images/icon-close-modal.svg" alt="close icon"> -->
-    <svg class="absolute top-9 right-6 lg:cursor-pointer close-modal" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+    <svg id="closeModalDefault" class="absolute top-9 right-6 lg:cursor-pointer close-modal" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
       <path d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
         fill="#000" fill-rule="evenodd" opacity=".4" />
     </svg>
