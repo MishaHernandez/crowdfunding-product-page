@@ -1,6 +1,5 @@
 const menuIcon = document.getElementById("menu");
 const cta = document.getElementById("cta");
-const btnBack = document.getElementById("btnBack");
 const modalDefault = document.getElementById("modalDefault");
 const closeModalSuccess = document.getElementById("closeModalSuccess");
 const overlay = document.getElementById("overlay");
@@ -11,10 +10,11 @@ function menuState(url) {
     menuIcon.setAttribute("src", url);
     overlay.classList.toggle("hidden");
 }
+
 menuIcon.addEventListener("click", () => {
     const menu = menuIcon.nextElementSibling;
     const logo = document.querySelector("header img");
-    
+
     logo.classList.toggle("z-20");
     menuIcon.classList.toggle("z-20");
     menu.classList.toggle("hidden");
@@ -27,7 +27,6 @@ menuIcon.addEventListener("click", () => {
 })
 
 // ---------------------------------------------CTA SECTION---------------------------------------------
-// bookmark button
 function bookmarkState(toggle, roundButtonColor, iconColor, textColor1, textColor2, message) {
     toggle.firstElementChild.firstElementChild.children[0].setAttribute("fill", roundButtonColor);
     toggle.firstElementChild.firstElementChild.children[1].setAttribute("fill", iconColor);
@@ -42,24 +41,24 @@ cta.addEventListener("click", e => {
     const roundButtonColorActive = "hsl(176, 72%, 28%)";
     const iconColor = "#B1B1B1";
     const iconColorActive = "#fff";
-    
+
     // bookmark button
     if (e.target.id === "bookmark") {
         const toggle = e.target;
         const toggleText = toggle.lastElementChild;
-        
+
         if (toggleText.classList.contains("lg:text-darkgray")) {
             bookmarkState(toggle, roundButtonColorActive, iconColorActive, textColor, textColorActive, "Bookmarked");
 
         } else if (toggleText.classList.contains("lg:text-cyan-200")) {
             bookmarkState(toggle, roundButtonColor, iconColor, textColorActive, textColor, "Bookmark");
         }
-        
-    // back this project button
+
+        // back this project button
     } else if (e.target.id === "btnBack") {
         overlay.classList.remove("hidden");
         modalDefault.classList.remove("hidden");
-        
+
         menuIcon.classList.remove("z-20");
         document.querySelector("header img").classList.remove("z-20");
     }
@@ -71,11 +70,11 @@ products.addEventListener("click", (e) => {
     if (e.target.matches("a.button")) {
         overlay.classList.remove("hidden");
         modalDefault.classList.remove("hidden");
-        
+
         // SELECT PRODUCT (from main section)
         const modalCardSelected = modalDefault.querySelectorAll(`section article:nth-of-type(${e.target.dataset.card})`)[0];
 
-        modalCardSelected.className = "relative mb-6 border-2 border-cyan-100 card-modal lg:pt-2 lg:rounded-lg";
+        modalCardSelected.className = "relative mx-auto mb-6 bg-white border border-2 rounded-md border-cyan-100 lg:pt-2 lg:rounded-lg available";
         modalCardSelected.lastElementChild.classList.replace("h-0", "h-32");
         modalCardSelected.lastElementChild.classList.replace("px-0", "px-6");
         modalCardSelected.lastElementChild.classList.replace("py-0", "py-5");
@@ -86,25 +85,28 @@ products.addEventListener("click", (e) => {
 
 // ------------------------------------------------MODAL------------------------------------------------
 function resetDefaultModal() {
-     modalDefault.querySelectorAll("article").forEach(elem => {
-         elem.className = "relative mb-6 border-gray-300 card-modal lg:pt-2 lg:rounded-lg";
+    modalDefault.querySelectorAll("article.available").forEach(elem => {
+        elem.className = "relative mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:pt-2 lg:rounded-lg available";
         //  reset pledge sections
-         elem.lastElementChild.classList.replace("h-32", "h-0");
-         elem.lastElementChild.classList.replace("px-6", "px-0");
-         elem.lastElementChild.classList.replace("py-5", "py-0");
-         elem.lastElementChild.classList.replace("border-t-2", "border-t-0");
+        elem.lastElementChild.classList.replace("h-32", "h-0");
+        elem.lastElementChild.classList.replace("px-6", "px-0");
+        elem.lastElementChild.classList.replace("py-5", "py-0");
+        elem.lastElementChild.classList.replace("border-t-2", "border-t-0");
         //  hidden dot
-         elem.querySelector("span.w-3.h-3").classList.add("hidden");
-     });
+        elem.querySelector("span.w-3.h-3").classList.add("hidden");
+    });
 }
+
 function updateProgressBar(inputPledge) {
-    let amount = parseInt((document.getElementById("amount").textContent).replace(/,|\$/gi, ""));
+    let backed = parseInt((document.getElementById("backed").textContent).replace(/,|\$/gi, ""));
     let backers = parseInt((document.getElementById("backers").textContent).replace(",", ""));
     let progressbar = document.getElementById("progressbar");
 
-    document.getElementById("amount").textContent = "$" + (amount + parseInt(inputPledge)).toLocaleString();
+    let total = backed + parseInt(inputPledge);
+
+    document.getElementById("backed").textContent = "$" + (total).toLocaleString();
     document.getElementById("backers").textContent = (backers + 1).toLocaleString();
-    progressbar.style.width = ((amount * 100) / 100000) + "%";
+    progressbar.style.width = ((backed * 100) / 100000) + "%";
 }
 
 // CLOSE MODAL
@@ -119,25 +121,33 @@ modalDefault.addEventListener("click", (e) => {
     // CONTINUE BUTTON
     if (e.target.matches("button")) {
         const modalSuccess = document.getElementById("modalSuccess");
-        const inputPledge = e.target.previousElementSibling.firstElementChild.value;
-        
-        updateProgressBar(inputPledge);
-        modalDefault.classList.add("hidden");
-        overlay.classList.remove("hidden");
-        modalSuccess.classList.remove("hidden");
-        resetDefaultModal();
-    
-    // SELECT PRODUCT (INPUT RADIO)
+
+        if (e.target.previousElementSibling !== null) {
+            const inputPledge = e.target.previousElementSibling.firstElementChild.value;
+
+            // updateStock(e.target);
+            updateProgressBar(inputPledge);
+            modalDefault.classList.add("hidden");
+            overlay.classList.remove("hidden");
+            modalSuccess.classList.remove("hidden");
+            resetDefaultModal();
+        } else {
+            modalDefault.classList.add("hidden");
+            overlay.classList.remove("hidden");
+            modalSuccess.classList.remove("hidden");
+            resetDefaultModal();
+        }
+
+        // SELECT PRODUCT (INPUT RADIO)
     } else if (e.target.matches("input[type='radio']")) {
         resetDefaultModal();
-        
         // selected product card
         if (e.target.checked) {
             let pledgeSection = e.target.parentElement.parentElement.nextElementSibling;
             const card = e.target.parentElement.parentElement.parentElement;
             const dot = e.target.parentElement.querySelector("span.w-3.h-3");
 
-            card.className = "relative mb-6 border-2 border-cyan-100 card-modal lg:pt-2 lg:rounded-lg";
+            card.className = "relative mx-auto mb-6 bg-white border border-2 rounded-md border-cyan-100 lg:pt-2 lg:rounded-lg available";
             dot.classList.remove("hidden");
             // selected pleged section
             pledgeSection.classList.replace("h-0", "h-32");
@@ -149,7 +159,7 @@ modalDefault.addEventListener("click", (e) => {
 })
 
 // GOT IT (SUCCESS MODAL)
-closeModalSuccess.addEventListener("click", ()=> {
+closeModalSuccess.addEventListener("click", () => {
     closeModalSuccess.parentElement.classList.add("hidden");
     overlay.classList.add("hidden");
 })

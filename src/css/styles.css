@@ -24,29 +24,25 @@ html {
 
 @tailwind components;
 
-.card {
+/* .card {
     @apply px-6 py-5 mx-auto bg-white border rounded-md;
-}
+} */
 
-.card-modal {
+/* .card-modal {
     @apply mx-auto bg-white border rounded-md;
-}
+} */
 
-.button {
+/* .button {
     @apply inline-block font-bold text-gray-100 rounded-full bg-cyan-100;
-}
+} */
 
-.button-secondary {
-    @apply inline-block font-bold text-black bg-white border-2 rounded-full;
-}
-
-.button-disable {
+/* .button-disable {
     @apply inline-block font-bold text-gray-100 rounded-full bg-darkgray;
-}
+} */
 
-.paragraph {
+/* .paragraph {
     @apply text-sm leading-relaxed text-darkgray;
-}
+} */
 
 @tailwind utilities;
 
