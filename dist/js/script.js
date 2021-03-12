@@ -114,7 +114,7 @@ closeModalDefault.addEventListener("click", () => {
     resetDefaultModal();
 })
 
-// MAIN MODAL
+// default MODAL
 modalDefault.addEventListener("click", (e) => {
     // CONTINUE BUTTON
     if (e.target.matches("button")) {
