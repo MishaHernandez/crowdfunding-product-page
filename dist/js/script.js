@@ -97,7 +97,7 @@ function resetDefaultModal() {
     });
 }
 
-function updateProgressBar(inputPledge) {
+function updateStatistics(inputPledge) {
     let backed = parseInt((document.getElementById("backed").textContent).replace(/,|\$/gi, ""));
     let backers = parseInt((document.getElementById("backers").textContent).replace(",", ""));
     let progressbar = document.getElementById("progressbar");
@@ -126,7 +126,7 @@ modalDefault.addEventListener("click", (e) => {
             const inputPledge = e.target.previousElementSibling.firstElementChild.value;
 
             // updateStock(e.target);
-            updateProgressBar(inputPledge);
+            updateStatistics(inputPledge);
             modalDefault.classList.add("hidden");
             overlay.classList.remove("hidden");
             modalSuccess.classList.remove("hidden");

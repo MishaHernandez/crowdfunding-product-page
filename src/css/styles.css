@@ -24,26 +24,6 @@ html {
 
 @tailwind components;
 
-/* .card {
-    @apply px-6 py-5 mx-auto bg-white border rounded-md;
-} */
-
-/* .card-modal {
-    @apply mx-auto bg-white border rounded-md;
-} */
-
-/* .button {
-    @apply inline-block font-bold text-gray-100 rounded-full bg-cyan-100;
-} */
-
-/* .button-disable {
-    @apply inline-block font-bold text-gray-100 rounded-full bg-darkgray;
-} */
-
-/* .paragraph {
-    @apply text-sm leading-relaxed text-darkgray;
-} */
-
 @tailwind utilities;
 
 picture::before {
@@ -56,15 +36,26 @@ picture::before {
     bottom: 0;
 }
 
+div.pledge.h-32 {
+    transition: height .5s, padding-top .5s, padding-bottom .5s;
+}
+
+div.pledge.h-0 {
+    transition: height .3s, padding-top .3s, padding-bottom .3s;
+}
+
 @media (min-width: 1024px) {
     .bookmark:hover circle {
         fill: hsl(0, 0%, 48%);
+        transition: fill .3s;
     }
     .close-modal:hover path {
         opacity: 1;
+        transition: opacity .3s;
     }
     
     .title-product:hover ~ span{
         border-color: hsl(176, 50%, 47%);
+        transition: border-color .3s;
     }
 }
