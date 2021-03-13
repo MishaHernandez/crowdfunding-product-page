@@ -4,8 +4,9 @@
   "description": "challenge by frontend mentor",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/css/styles.css --output dist/css/styles.css",
-    "watch": "postcss src/css/styles.css --output dist/css/styles.css --watch"
+    "build": "postcss css/styles.css --o dist/css/styles.css",
+    "watch": "postcss css/styles.css --o dist/css/styles.css --watch",
+    "buildprod": "NODE_ENV=production postcss css/styles.css --o dist/css/styles.css"
   },
   "author": "Mijail Hernandez",
   "license": "ISC",
