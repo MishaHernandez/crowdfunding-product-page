@@ -65,6 +65,49 @@ cta.addEventListener("click", e => {
 })
 
 // ---------------------------------------------MAIN SECTION---------------------------------------------
+function updateStatistics(inputPledge) {
+    let backed = parseInt((document.getElementById("backed").dataset.target));
+    let backers = parseInt((document.getElementById("backers").dataset.target));
+    let progressbar = document.getElementById("progressbar");
+
+    let total = backed + parseInt(inputPledge);
+
+    document.getElementById("backed").textContent = "$" + (total).toLocaleString();
+    document.getElementById("backers").textContent = (backers + 1).toLocaleString();
+    progressbar.style.width = ((backed * 100) / 100000) + "%";
+}
+
+function animatedStatistics() {
+    const counters = document.querySelectorAll(".counter");
+    const speed = 500;
+    const speed2 = 4000;
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+            let inc = 0;
+
+            if (target > 50000) {
+                inc = Math.floor(target / speed2);
+            } else {
+                inc = Math.floor(target / speed);
+            }
+
+            if (count < target) {
+                counter.innerText = (count + inc).toLocaleString();
+                setTimeout(updateCount, 5);
+            } else {
+                counter.innerText = (target).toLocaleString();
+            }
+        };
+        updateCount();
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    animatedStatistics();
+})
+
 // SELECT REWARD
 products.addEventListener("click", (e) => {
     if (e.target.matches("a.button")) {
@@ -96,50 +139,6 @@ function resetDefaultModal() {
         elem.querySelector("span.w-3.h-3").classList.add("hidden");
     });
 }
-
-function updateStatistics(inputPledge) {
-    let backed = parseInt((document.getElementById("backed").dataset.target));
-    let backers = parseInt((document.getElementById("backers").dataset.target));
-    let progressbar = document.getElementById("progressbar");
-
-    let total = backed + parseInt(inputPledge);
-
-    document.getElementById("backed").textContent = "$" + (total).toLocaleString();
-    document.getElementById("backers").textContent = (backers + 1).toLocaleString();
-    progressbar.style.width = ((backed * 100) / 100000) + "%";
-}
-
-function animatedStatistics() {
-    const counters = document.querySelectorAll(".counter");
-    const speed = 500;
-    const speed2 = 4000;
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
-            const count = +counter.innerText;
-            let inc = 0;
-            
-            if (target > 50000) {
-                inc = Math.floor(target / speed2);
-            } else {
-                inc = Math.floor(target / speed);
-            }
-
-            if (count < target) {
-                counter.innerText = (count + inc).toLocaleString();
-                setTimeout(updateCount, 5);
-            } else {
-                counter.innerText = (target).toLocaleString();
-            }
-        };
-        updateCount();
-    });
-}
-
-document.addEventListener("DOMContentLoaded", ()=> {
-    animatedStatistics();
-})
-
 
 // CLOSE MODAL
 closeModalDefault.addEventListener("click", () => {

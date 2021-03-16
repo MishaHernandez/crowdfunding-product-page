@@ -1,8 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+
 html {
     scroll-behavior: smooth;
 }
-
-@tailwind base;
 
 @font-face {
     font-family: 'Commissioner';
@@ -22,14 +24,10 @@ html {
     font-weight: 700;
 }
 
-@tailwind components;
-
-@tailwind utilities;
-
 picture::before {
     content: "";
     position: absolute;
-    background-image: linear-gradient(rgba(0,0,0,.4) 10%, rgba(255,255,255,0) 30%);
+    background-image: linear-gradient(rgba(0, 0, 0, .4) 10%, rgba(255, 255, 255, 0) 30%);
     top: 0;
     left: 0;
     right: 0;
@@ -49,13 +47,16 @@ div.pledge.h-0 {
         fill: hsl(0, 0%, 48%);
         transition: fill .3s;
     }
+
     .close-modal:hover path {
         opacity: 1;
         transition: opacity .3s;
     }
-    
-    .title-product:hover ~ span{
+
+    .title-product:hover~span {
         border-color: hsl(176, 50%, 47%);
         transition: border-color .3s;
     }
 }
+
+@tailwind utilities;
