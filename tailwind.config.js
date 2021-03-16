@@ -8,12 +8,14 @@ module.exports = {
       borderWidth: {
         '1': '1px',
       },
-      maxWidth: { 
-        header: '1155px', 
+      maxWidth: {
+        header: '1155px',
         main: '730px',
         success: '540px',
       },
-      fontFamily: { custom: ['commissioner'], },
+      fontFamily: {
+        custom: ['commissioner'],
+      },
       fontSize: {
         '2.5xl': '1.75rem',
       },
@@ -23,9 +25,15 @@ module.exports = {
         darkgray: 'hsl(0, 0%, 48%)',
         link: 'hsl(228, 45%, 44%)',
       },
-      zIndex: { '-10': '-10', },
-      width: { 'card-mb': '87%', },
-      height: { 94: '22rem', }
+      zIndex: {
+        '-10': '-10',
+      },
+      width: {
+        'card-mb': '87%',
+      },
+      height: {
+        94: '22rem',
+      }
     },
   },
   variants: {
