@@ -156,7 +156,7 @@
   <!-------------------------- SECTION MODAL START -------------------------->
 
   <section id="modalDefault"
-    class="absolute inset-x-0 z-20 hidden px-6 py-5 mx-auto bg-white border rounded-md top-28 w-card-mb max-w-main lg:px-12 lg:rounded-xl">
+    class="absolute inset-x-0 z-20 px-6 py-5 mx-auto bg-white border rounded-md top-28 w-card-mb max-w-main lg:px-12 lg:rounded-xl">
     <!-- <img class="absolute top-9 right-6 lg:cursor-pointer" src="images/icon-close-modal.svg" alt="close icon"> -->
     <svg id="closeModalDefault" class="absolute top-9 right-6 lg:cursor-pointer close-modal" width="15" height="15"
       xmlns="http://www.w3.org/2000/svg">
@@ -171,8 +171,8 @@
     <!------------------------ CARD 1 ------------------------>
     <article class="mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:py-2 lg:rounded-lg available">
       <div class="px-6 py-5">
-        <label class="flex items-center mb-6 text-sm font-bold lg:text-base lg:hover:text-cyan-100">
-          <input class="hidden" type="radio" id="radio" name="pledge">
+        <div class="flex items-center mb-6 text-sm font-bold lg:text-base lg:hover:text-cyan-100">
+          <input class="hidden" type="radio"  name="pledge" title="enter amount">
           <div class="order-2 title-product">
             <h4 class="transition-colors duration-300 lg:cursor-pointer">Pledge with no reward</h4>
           </div>
@@ -180,7 +180,7 @@
             class="flex items-center justify-center order-1 w-6 h-6 mr-4 transition-colors duration-300 rounded-full border-1">
             <span class="hidden w-3 h-3 rounded-full bg-cyan-100"></span>
           </span>
-        </label>
+        </div>
         <p class="mb-6 text-sm leading-relaxed text-darkgray lg:ml-10 lg:mb-0 lg:text-base">
           Choose to support us without a reward if you simply believe in our project. As a backer,
           you will be signed up to receive product updates via email.
@@ -193,11 +193,10 @@
     </article>
 
     <!------------------------ CARD 2 ------------------------>
-    <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:pt-2 lg:rounded-lg available"
-      id="product1">
+    <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:pt-2 lg:rounded-lg available" id="product1">
       <div class="px-6 py-5">
-        <label class="flex items-center mb-6">
-          <input class="hidden" type="radio" id="radio" name="pledge">
+        <div class="flex items-center mb-6">
+          <input class="hidden" type="radio"  name="pledge" title="selected product">
           <div class="order-2 lg:flex title-product">
             <h4
               class="flex items-center mb-1 text-sm font-bold transition-colors duration-300 lg:text-base lg:mr-4 lg:cursor-pointer lg:hover:text-cyan-100">
@@ -207,7 +206,7 @@
           <span class="flex items-center justify-center order-1 w-6 h-6 mr-4 transition-colors duration-300 rounded-full border-1">
             <span class="hidden w-3 h-3 rounded-full bg-cyan-100"></span>
           </span>
-        </label>
+        </div>
         <p class="mb-6 text-sm leading-relaxed text-darkgray lg:text-base lg:ml-10 lg:mb-0">
           You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
           you’ll be added to a special Backer member list.
@@ -219,7 +218,7 @@
         <p class="mb-4 text-sm leading-relaxed text-center text-darkgray lg:mb-0 lg:text-base">Enter your pledge</p>
         <div class="flex justify-between">
           <div class="flex px-6 py-3 text-sm font-bold text-gray-400 border-2 border-gray-300 rounded-full lg:mr-4">$
-            <input class="w-8 ml-2 font-bold text-black" type="text" value="25">
+            <input class="w-8 ml-2 font-bold text-black" type="text" value="25" title="enter amount">
           </div>
           <button
             class="inline-block py-3 text-sm font-bold text-gray-100 transition-colors duration-300 rounded-full px-7 bg-cyan-100 lg:px-6 lg:hover:bg-cyan-200 button">Continue</button>
@@ -228,11 +227,10 @@
     </article>
 
     <!------------------------ CARD 3 ------------------------>
-    <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:py-2 lg:rounded-lg available"
-      id="product2">
+    <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:py-2 lg:rounded-lg available" id="product2">
       <div class="px-6 py-5">
-        <label class="flex items-center mb-6">
-          <input class="hidden" type="radio" id="radio" name="pledge">
+        <div class="flex items-center mb-6">
+          <input class="hidden" type="radio"  name="pledge" title="selected product">
           <div class="order-2 lg:flex title-product">
             <h4 class="flex items-center mb-1 text-sm font-bold transition-colors duration-300 lg:cursor-pointer lg:text-base lg:mr-4 lg:hover:text-cyan-100">
               Black Edition Stand</h4>
@@ -241,7 +239,7 @@
           <span class="flex items-center justify-center order-1 w-6 h-6 mr-4 transition-colors duration-300 rounded-full border-1">
             <span class="hidden w-3 h-3 rounded-full bg-cyan-100"></span>
           </span>
-        </label>
+        </div>
         <p class="mb-6 text-sm leading-relaxed text-darkgray lg:text-base lg:ml-10 lg:mb-0">
           You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
           member list. Shipping is included.
@@ -253,7 +251,7 @@
         <p class="mb-4 text-sm leading-relaxed text-center text-darkgray lg:mb-0 lg:text-base">Enter your pledge</p>
         <div class="flex justify-between">
           <div class="flex px-6 py-3 text-sm font-bold text-gray-400 border-2 border-gray-300 rounded-full lg:mr-4">$
-            <input class="w-8 ml-2 font-bold text-black" type="text" value="75">
+            <input class="w-8 ml-2 font-bold text-black" type="text" value="75" title="enter amount">
           </div>
           <button
             class="inline-block py-3 text-sm font-bold text-gray-100 transition-colors duration-300 rounded-full px-7 bg-cyan-100 lg:px-6 lg:hover:bg-cyan-200 button">Continue</button>
@@ -262,11 +260,10 @@
     </article>
 
     <!------------------------ CARD 4 ------------------------>
-    <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md opacity-50 lg:py-2 lg:rounded-lg"
-      id="product3">
+    <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md opacity-50 lg:py-2 lg:rounded-lg" id="product3">
       <div class="px-6 py-5">
-        <label class="flex items-center mb-6">
-          <input class="hidden" type="radio" id="radio" name="pledge" disabled>
+        <div class="flex items-center mb-6">
+          <input class="hidden" type="radio"  name="pledge" title="selected product" disabled>
           <div class="order-2 lg:flex">
             <h4 class="flex items-center mb-1 text-sm font-bold transition-colors duration-300 lg:text-base lg:mr-4">
               Mahogany Special Edition</h4>
@@ -275,7 +272,7 @@
           <span class="flex items-center justify-center order-1 w-6 h-6 mr-4 transition-colors duration-300 rounded-full border-1">
             <span class="hidden w-3 h-3 rounded-full bg-cyan-100"></span>
           </span>
-        </label>
+        </div>
         <p class="mb-6 text-sm leading-relaxed text-darkgray lg:text-base lg:ml-10 lg:mb-0">
           You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
           to our Backer member list. Shipping is included.
@@ -287,7 +284,7 @@
         <p class="mb-4 text-sm leading-relaxed text-center text-darkgray lg:mb-0 lg:text-base">Enter your pledge</p>
         <div class="flex justify-between">
           <div class="flex px-6 py-3 text-sm font-bold text-gray-400 border-2 border-gray-300 rounded-full lg:mr-4">$
-            <input class="w-8 ml-2 font-bold text-black" type="text" value="200">
+            <input class="w-8 ml-2 font-bold text-black" type="text" value="200" title="enter amount">
           </div>
           <button
             class="inline-block py-3 text-sm font-bold text-gray-100 transition-colors duration-300 rounded-full px-7 bg-cyan-100 lg:px-6 lg:hover:bg-cyan-200 button"
