@@ -20,3 +20,7 @@ jspm_packages/
 
 # Optional npm cache directory
 .npm
+package.json
+package-lock.json
+postcss.config.js
+tailwind.config.js
