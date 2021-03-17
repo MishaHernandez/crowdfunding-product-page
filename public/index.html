@@ -63,7 +63,7 @@
   <div class="px-6 py-5 mx-auto mb-6 text-center bg-white border rounded-md w-card-mb max-w-main lg:px-12 lg:text-left lg:p-12 lg:py-5">
     <div class="lg:flex">
       <div class="lg:flex-1">
-        <h2 id="backed" class="mt-6 text-3xl font-bold counter" data-target="89914">0</h2>
+        <h2 id="backed" class="mt-6 text-3xl font-bold">$<span class="counter" data-target="89914">0</span></h2>
         <p class="mt-1.5 mb-6 text-sm leading-relaxed text-darkgray">of $100,000 backed</p>
       </div>
       <hr class="w-20 mx-auto lg:transform lg:rotate-90 lg:translate-y-14 lg:w-16">
@@ -171,11 +171,11 @@
     <!------------------------ CARD 1 ------------------------>
     <article class="mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:py-2 lg:rounded-lg available">
       <div class="px-6 py-5">
-        <div class="flex items-center mb-6 text-sm font-bold lg:text-base lg:hover:text-cyan-100">
-          <input class="hidden" type="radio"  name="pledge" title="enter amount">
-          <div class="order-2 title-product">
+        <label class="flex items-center mb-6 text-sm font-bold lg:text-base lg:hover:text-cyan-100">
+          <input class="hidden" type="radio" name="pledge" title="selected product">
+          <span class="order-2 title-product">
             <h4 class="transition-colors duration-300 lg:cursor-pointer">Pledge with no reward</h4>
-          </div>
+          </span>
           <span
             class="flex items-center justify-center order-1 w-6 h-6 mr-4 transition-colors duration-300 rounded-full border-1">
             <span class="hidden w-3 h-3 rounded-full bg-cyan-100"></span>
@@ -195,14 +195,14 @@
     <!------------------------ CARD 2 ------------------------>
     <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:pt-2 lg:rounded-lg available" id="product1">
       <div class="px-6 py-5">
-        <div class="flex items-center mb-6">
-          <input class="hidden" type="radio"  name="pledge" title="selected product">
-          <div class="order-2 lg:flex title-product">
+        <label class="flex items-center mb-6">
+          <input class="hidden" type="radio" name="pledge" title="selected product">
+          <span class="order-2 lg:flex title-product">
             <h4
               class="flex items-center mb-1 text-sm font-bold transition-colors duration-300 lg:text-base lg:mr-4 lg:cursor-pointer lg:hover:text-cyan-100">
               Bamboo Stand</h4>
             <p class="text-sm font-medium text-cyan-100 lg:text-base">Pledge $25 or more</p>
-          </div>
+          </span>
           <span class="flex items-center justify-center order-1 w-6 h-6 mr-4 transition-colors duration-300 rounded-full border-1">
             <span class="hidden w-3 h-3 rounded-full bg-cyan-100"></span>
           </span>
@@ -229,13 +229,13 @@
     <!------------------------ CARD 3 ------------------------>
     <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md lg:py-2 lg:rounded-lg available" id="product2">
       <div class="px-6 py-5">
-        <div class="flex items-center mb-6">
+        <label class="flex items-center mb-6">
           <input class="hidden" type="radio"  name="pledge" title="selected product">
-          <div class="order-2 lg:flex title-product">
+          <span class="order-2 lg:flex title-product">
             <h4 class="flex items-center mb-1 text-sm font-bold transition-colors duration-300 lg:cursor-pointer lg:text-base lg:mr-4 lg:hover:text-cyan-100">
               Black Edition Stand</h4>
             <p class="text-sm font-medium text-cyan-100 lg:text-base">Pledge $75 or more</p>
-          </div>
+          </span>
           <span class="flex items-center justify-center order-1 w-6 h-6 mr-4 transition-colors duration-300 rounded-full border-1">
             <span class="hidden w-3 h-3 rounded-full bg-cyan-100"></span>
           </span>
@@ -262,13 +262,13 @@
     <!------------------------ CARD 4 ------------------------>
     <article class="relative mx-auto mb-6 bg-white border border-gray-300 rounded-md opacity-50 lg:py-2 lg:rounded-lg" id="product3">
       <div class="px-6 py-5">
-        <div class="flex items-center mb-6">
-          <input class="hidden" type="radio"  name="pledge" title="selected product" disabled>
-          <div class="order-2 lg:flex">
+        <label class="flex items-center mb-6">
+          <input class="hidden" type="radio" name="pledge" title="selected product" disabled>
+          <span class="order-2 lg:flex">
             <h4 class="flex items-center mb-1 text-sm font-bold transition-colors duration-300 lg:text-base lg:mr-4">
               Mahogany Special Edition</h4>
             <p class="text-sm font-medium text-cyan-100 lg:text-base">Pledge $200 or more</p>
-          </div>
+          </span>
           <span class="flex items-center justify-center order-1 w-6 h-6 mr-4 transition-colors duration-300 rounded-full border-1">
             <span class="hidden w-3 h-3 rounded-full bg-cyan-100"></span>
           </span>

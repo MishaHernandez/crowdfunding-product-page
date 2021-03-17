@@ -66,14 +66,16 @@ cta.addEventListener("click", e => {
 
 // ---------------------------------------------MAIN SECTION---------------------------------------------
 function updateStatistics(inputPledge) {
-    let backed = parseInt((document.getElementById("backed").dataset.target));
+    let backed = parseInt((document.getElementById("backed").firstElementChild.dataset.target));
     let backers = parseInt((document.getElementById("backers").dataset.target));
     let progressbar = document.getElementById("progressbar");
 
     let total = backed + parseInt(inputPledge);
 
-    document.getElementById("backed").textContent = "$" + (total).toLocaleString();
+    document.getElementById("backed").firstElementChild.textContent = (total).toLocaleString();
+    document.getElementById("backed").firstElementChild.dataset.target = total;
     document.getElementById("backers").textContent = (backers + 1).toLocaleString();
+    document.getElementById("backers").dataset.target = backers + 1;
     progressbar.style.width = ((backed * 100) / 100000) + "%";
 }
 
